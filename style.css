@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration:none;
+    outline: 0;
+    appearance:0;
+    border: 0;
+    list-style: none;
+    box-sizing: border-box;
+}
+html{
+    font: 14px;
+}
+body{
+    height: 100vh;
+    width: 100vw;
+    font-family: poppins, sans-serif;
+    font-size: 0.88rem;
+    background-color: #f6f6f9;
+    user-select: none;
+    overflow-x: hidden;
+}
+.container{
+    display: grid;
+    width: 96%;
+    margin: 0 auto;
+    gap: 1.8rem;
+    grid-template-columns: 14rem auto 23rem;
+}
+a{
+    color:#363949;
+}
+img{
+    display: block;
+    width: 100%;
+}
+h1{
+    font-weight: 800;
+    font-size: 1.8rem;
+}
+h2{
+    font-size: 1.4rem;
+}
+h3{
+font-size: 0.87rem;
+}
+h4{
+    font-size: 0.8rem;
+}
+h5{
+    font-size: 0.77rem;
+}
+small{
+    font-size: 0.75rem;
+}
+.profile-photo{
+    width: 2.8rem;
+    height: 2.8rem;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.text-muted{
+    color: #7d8da1;
+}
+p{
+    color: #677483;
+}
+b{
+    color: #363949;
+}
+.primary{
+    color: #7380;
+}
+.danger{
+    color: #ff7782;
+}
+.success{
+    color: #41f1b6;
+}
+.warning{
+    color: #ffbb55;
+}
+aside{
+    height: 100vh;
+}
+aside .top{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 1.4rem;
+}
+aside .logo img{
+    width: 2rem;
+    height: 2rem;
+}
+aside .logo{
+    display: flex;
+    gap: 0.8rem;
+}
+aside .close{
+    display: none;
+}
+.close{
+    width: 20px;
+}
+.sidebar{
+    width: 20px;
+}
+/* sidebar */
+.sidebar{
+    display: flex;
+    flex-direction: column;
+    height: 86vh;
+    position: relative;
+    top: 3rem;
+}
+aside h3{
+    font-weight: 500;
+}
+aside .sidebar a{
+    display:fl;
+    /* margin-left: 1rem;
+    gap: 1rem;
+    align-items: center;
+    position: relative;
+    height: 3.7rem; */
+}
