@@ -497,6 +497,7 @@ color: white;
     height: 100vh;
     padding: 1.8rem;
     display: none;
+    color: black;
     animation:showMenu 400ms ease forwards ;
   }
   @keyframes showMenu{
