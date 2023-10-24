@@ -1,4 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+.dark-theme-variables{
+    --color-background:#181a1e;
+    --color-white:#202528;
+    --color-dark:#edeffd;
+    --color-dark-variant:#a3bdcc;
+    --color-light:rgba(0, 0, 0, 0.4);
+    --box-shadow:0 2rem 3rem rgba(132,139,200,0.18);
+}
+.theme{
+    background: rgb(17, 16, 16);
+    color: white;  
+}
+#theme2,#theme3,#theme4,#theme5,#theme6,#theme7,#theme8,#theme9{
+    background: rgb(17, 16, 16);
+    color: white;
+}
 *{
     margin: 0;
     padding: 0;
@@ -375,5 +392,186 @@ main table tbody td{
     box-shadow: none;
 }
 .sales-analytics .sideBarIcon{
-    width:30px;
+    width:45px;
+}
+.right .sales-analytics .item .right{
+    display: flex;
+    justify-content: space-between;
+    align-items:start;
+    margin: 0;
+    width: 100%;
+}
+.right .sales-analytics .item .sideBarIcon{
+    padding: 0.6rem;
+    color:black;
+    border-radius: 50%;
+    display: flex;
+}
+.right .sales-analytics .item.offline .sideBarIcon{
+background: #ff7782;
+color: white;
+}
+.right .sales-analytics .item.customers .sideBarIcon{
+background: #41f1b6;
+color: white;
+}
+.right .sales-analytics .item.online .sideBarIcon{
+    background: #7380ec;
+    color: white;
+}
+.right .sales-analytics .add-products{
+    background-color: transparent;
+    border: dashed 2px #7380ec;
+    color: #7380ec;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.sideBarIcon.last{
+    color: black;
+}
+.right .sales-analytics .add-products div{
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;   
+}
+.right .sales-analytics .add-products div h3{
+    font-weight: 600;
+}
+/*media queries for tablet */
+@media screen and (max-width:1200px){
+    .container{
+        width: 94%;
+        grid-template-columns: 7rem auto 23rem;
+    }
+    aside .logo h2{
+        display: none;
+    }
+    aside .sidebar h3{
+        display: none;
+    }
+    aside .sidebar a{
+        width: 5.6rem;
+    }
+    aside .sidebar a:last-child{
+        margin-top:-1.8rem;
+        position: relative;
+    }
+    main .insights{
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
+    main .recent-orders{
+        width: 94%;
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%);
+        margin: 2rem 0 0 8.8rem;
+    }
+    main .recent-orders table{
+        width: 82vw;
+    }
+    main table thead tr th:last-child,main table thead tr th:first-child{
+        display: none;
+    }
+    main table thead tr th:last-child,main table thead tr th:first-child{
+        display: none;
+    }
+    main table tbody tr td:last-child,main table tbody tr td:first-child{
+        display: none;
+    }
+}
+/* smaller devices media queries */
+@media screen and (max-width:768px){
+  .container{
+    width: 100%;
+    grid-template-columns: 1fr;
+  }
+  aside{
+    position: fixed;
+    left:-110;
+    background: white;
+    width: 18rem;
+    z-index: 3;
+    box-shadow:1rem 3rem 4rem rgba(132,139,200,0.18);
+    height: 100vh;
+    padding: 1.8rem;
+    display: none;
+    animation:showMenu 400ms ease forwards ;
+  }
+  @keyframes showMenu{
+    to{
+        left: 0;
+    }
+  }
+
+  aside .logo h2{
+    display: inline;
+  }
+  aside .sidebar h3{
+    display: inline;
+  }
+  aside .logo{
+    margin-left: 1rem;
+  }
+  aside .sidebar a{
+    width: 100%;
+    height: 3.4rem;
+  }
+  aside .sidebar a:last-child{
+    position: absolute;
+    bottom: 5rem;
+  }
+  aside .close{
+    display: inline-block;
+    cursor: pointer;
+    width: 30px;
+  }
+  main{
+    margin-top: 8rem;
+    padding: 0 1rem;
+  }
+  main .recent-orders{
+    position: relative;
+    margin: 3rem 0 0 0;
+    width: 100%;
+  }
+  main .recent-orders table{
+    width: 100%;
+    margin: 0;
+  }
+  .right{
+    width: 94%;
+    margin: 0 auto 4rem;
+  }
+  .right .top{
+    position: fixed;
+    top: 0;
+    left: 0;
+    align-items: center;
+    padding: 0 0.8rem;
+    height: 4.6rem;
+    background-color:#fff;
+    width: 100%;
+    margin: 0;
+    z-index: 2;
+    box-shadow: 0 1rem 1rem rgba(132,139,200,0.18);
+  }
+  .right .top .theme-toggler{
+    width: 4.4rem;
+    position: absolute;
+    left: 66%;
+  }
+  .right .profile .info{
+    display: none;
+  }
+  .right .top button{
+    display: inline-block;
+    width: 60px;
+    background:transparent;
+    cursor: pointer;
+    color:#363949;
+    position: absolute;
+    left: 1rem;
+  }
 }

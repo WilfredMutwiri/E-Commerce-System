@@ -7,7 +7,7 @@
     <title>E-Commerce</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body class="theme">
   <div class="container">
     <aside>
         <div class="top">
@@ -107,35 +107,35 @@
                   <h3>Logout</h3>                  
             </a>
     </aside><!-- end of aside  -->
-    <main><!--main section-->
+<main class="mainHolder"><!--main section-->
 <h1>Dashboard</h1>
 <div class="date">
 <input type="date">
 </div>
 <div class="insights">
-  <div class="sales">
-    <svg class="sideBarIcon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-      <path stroke-linecap="round" stroke-linejoin="round" d="M7.5 14.25v2.25m3-4.5v4.5m3-6.75v6.75m3-9v9M6 20.25h12A2.25 2.25 0 0020.25 18V6A2.25 2.25 0 0018 3.75H6A2.25 2.25 0 003.75 6v12A2.25 2.25 0 006 20.25z" />
-    </svg>
-    <div class="middle">
-      <div class="left">
-        <h3>Total Sales</h3>
-        <h1>$24,024</h1>
-        <small class="text-muted">Last 24 Hours</small>
-      </div>
-      <div class="progress">
-        <svg>
-          <circle cx="38" cy="36" r="36"></circle>
-        </svg>
-        <div class="number">
-          <p>
-            81%
-          </p>
+  <div class="sales" id="theme2">
+      <svg class="sideBarIcon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M7.5 14.25v2.25m3-4.5v4.5m3-6.75v6.75m3-9v9M6 20.25h12A2.25 2.25 0 0020.25 18V6A2.25 2.25 0 0018 3.75H6A2.25 2.25 0 003.75 6v12A2.25 2.25 0 006 20.25z" />
+      </svg>
+      <div class="middle">
+        <div class="left">
+          <h3>Total Sales</h3>
+          <h1>$24,024</h1>
+          <small class="text-muted">Last 24 Hours</small>
+        </div>
+        <div class="progress">
+          <svg>
+            <circle cx="38" cy="36" r="36"></circle>
+          </svg>
+          <div class="number">
+            <p>
+              81%
+            </p>
+          </div>
         </div>
       </div>
-    </div>
   </div><!--end of sales-->
-  <div class="expenses">
+  <div class="expenses" id="theme3">
     <svg class="sideBarIcon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
       <path stroke-linecap="round" stroke-linejoin="round" d="M3 13.125C3 12.504 3.504 12 4.125 12h2.25c.621 0 1.125.504 1.125 1.125v6.75C7.5 20.496 6.996 21 6.375 21h-2.25A1.125 1.125 0 013 19.875v-6.75zM9.75 8.625c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125v11.25c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 01-1.125-1.125V8.625zM16.5 4.125c0-.621.504-1.125 1.125-1.125h2.25C20.496 3 21 3.504 21 4.125v15.75c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 01-1.125-1.125V4.125z" />
     </svg>
@@ -158,7 +158,7 @@
       </div>
     </div>
   </div><!--end of expenses-->
-  <div class="income">
+  <div class="income"id="theme4">
     <svg class="sideBarIcon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
       <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 18L9 11.25l4.306 4.307a11.95 11.95 0 015.814-5.519l2.74-1.22m0 0l-5.94-2.28m5.94 2.28l-2.28 5.941" />
     </svg>
@@ -184,7 +184,7 @@
 </div>
 <div class="recent-orders">
   <h2>Recent Orders</h2>
-  <table>
+  <table id="theme5">
     <thead>
       <tr>
         <th>Product Name</th>
@@ -274,7 +274,7 @@
   </div><!--end of top-->
   <div class="recent-updates">
     <h2>Recent Updates</h2>
-    <div class="updates">
+    <div class="updates" id="theme6">
       <div class="update">
         <div class="profile-photo">
           <img src="images/profile-2.jpg">
@@ -306,7 +306,7 @@
   </div>
   <div class="sales-analytics">
     <h2>Sales Analytics</h2>
-    <div class="item online">
+    <div class="item online" id="theme7">
       <div class="shoppingIcon">
         <svg class="sideBarIcon"  xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
           <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 10.5V6a3.75 3.75 0 10-7.5 0v4.5m11.356-1.993l1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 01-1.12-1.243l1.264-12A1.125 1.125 0 015.513 7.5h12.974c.576 0 1.059.435 1.119 1.007zM8.625 10.5a.375.375 0 11-.75 0 .375.375 0 01.75 0zm7.5 0a.375.375 0 11-.75 0 .375.375 0 01.75 0z" />
@@ -321,7 +321,7 @@
         <h3>3849</h3>
       </div>
     </div>
-    <div class="item offline">
+    <div class="item offline" id="theme8">
       <div class="localMallIcon">
         <svg class="sideBarIcon"  xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
           <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 00-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 00-16.536-1.84M7.5 14.25L5.106 5.272M6 20.25a.75.75 0 11-1.5 0 .75.75 0 011.5 0zm12.75 0a.75.75 0 11-1.5 0 .75.75 0 011.5 0z" />
@@ -336,7 +336,7 @@
         <h3>1100</h3>
       </div>
     </div>
-    <div class="item customers">
+    <div class="item customers" id="theme9">
       <div class="personIcon">
         <svg class="sideBarIcon"  xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
           <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 6a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM4.501 20.118a7.5 7.5 0 0114.998 0A17.933 17.933 0 0112 21.75c-2.676 0-5.216-.584-7.499-1.632z" />
@@ -350,17 +350,18 @@
         <h5 class="success">+25%</h5>
         <h3>849</h3>
       </div>
-      <div class="item add-products">
-        <div>
-          <svg class="sideBarIcon"  xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
-          </svg>          
-          <h3>Add Products</h3>
-        </div>
+    </div>
+    <div class="item add-products">
+      <div>
+        <svg class="sideBarIcon last"  xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
+        </svg>          
+        <h3>Add Products</h3>
       </div>
     </div>
   </div>
 </div>
-  </div>  
+  </div> 
+  <script src="script.js"></script> 
 </body>
 </html>
