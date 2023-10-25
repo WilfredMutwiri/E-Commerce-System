@@ -11,6 +11,37 @@ const theme7=document.getElementById("theme7");
 const theme8=document.getElementById("theme8");
 const theme9=document.getElementById("theme9");
 
+let main=document.querySelector("#main");
+let customers=document.querySelector("#customer");
+let customerHolder=document.querySelector(".customerHolder")
+let mainHolder=document.querySelector(".mainHolder");
+let clickCount=0;
+let right=document.querySelector(".right");
+
+let orders=document.querySelector("#orders");
+let ordersHolder=document.querySelector(".ordersHolder")
+// display orders
+orders.addEventListener("click",()=>{
+    main.innerHTML=ordersHolder.innerHTML;
+    right.innerHTML="";
+    clickCount++;
+    console.log(clickCount);
+    if(clickCount >=2){
+        window.location.reload()
+    }
+})
+
+// display customers
+customers.addEventListener("click",()=>{
+    main.innerHTML=customerHolder.innerHTML;
+    right.innerHTML="";
+    clickCount++;
+    console.log(clickCount);
+    if(clickCount >=2){
+        window.location.reload()
+    }
+})
+
 menuBtn.addEventListener("click",()=>{//reveal menu
     sideMenu.style.display="block";
 })

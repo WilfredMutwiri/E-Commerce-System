@@ -438,6 +438,36 @@ color: white;
 .right .sales-analytics .add-products div h3{
     font-weight: 600;
 }
+.customerHolder,.ordersHolder{
+    display: none;
+}
+#customerContainer,#ordersContainer{
+    background:rgb(248, 248, 248);
+    padding: 20px;
+    border-bottom-left-radius: 15%;
+    border-top-right-radius: 15%;
+    border-right:10px solid blueviolet;
+}
+#customerContainer h3,#ordersContainer h3{
+color: black;
+font-size: 29px;
+text-align: center;
+padding: 20px;
+}
+#cust,#order{
+    display: flex;
+    flex-wrap: wrap;
+}
+#cust img,#order img{
+    width: 300px;
+    height: 300px;
+    object-fit: contain;
+    padding: 20px;
+}
+#cust p,#order p{
+font-size: 16px;
+text-align: center;
+}
 /*media queries for tablet */
 @media screen and (max-width:1200px){
     .container{
